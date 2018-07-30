@@ -1,0 +1,6 @@
+Departemen Produksi
+	QR CheckProduk Masuk 	belum jalan
+	Pembelian Produksi		belum jalan
+	Stok Produksi 			-
+	Pengemasan 				beres
+	Stok Barang Siap Jual	beres bagian nama masih bingung

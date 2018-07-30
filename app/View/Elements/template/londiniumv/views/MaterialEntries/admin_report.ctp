@@ -1,0 +1,34 @@
+<?php echo $this->Form->create("MaterialEntry", array("class" => "form-horizontal form-separate", "action" => "report", "type" => "file", "id" => "formSubmit", "inputDefaults" => array("error" => array("attributes" => array("wrap" => "label", "class" => "error"))))) ?>
+<div class="tab-pane active fade in" id="data-utama">
+    <div class="panel panel-default">
+        <div class="panel-body">
+            <div class="block-inner text-danger">
+                <h6 class="heading-hr"><?= __("Laporan Transaksi Pembelian") ?>
+                </h6>
+            </div>
+            <div id="materialList">
+                <div class="form-group">
+                    <?php
+                    echo $this->Form->label("TransactionEntry.dateFrom", __("Tanggal Awal Laporan "), array("class" => "col-md-2 control-label"));
+                    echo $this->Form->input("TransactionEntry.dateFrom", array("div" => array("class" => "col-md-4"), "label" => false, "class" => "form-control datepicker"));
+                    ?>
+                    <?php
+                    echo $this->Form->label("TransactionEntry.dateTo", __("Tanggal Akhir Laporan"), array("class" => "col-md-2 control-label"));
+                    echo $this->Form->input("TransactionEntry.dateTo", array("div" => array("class" => "col-md-4"), "label" => false, "class" => "form-control datepicker"));
+                    ?>
+                </div>    
+            </div>
+        </div>
+    </div>    
+</div>
+<div class="panel panel-default">
+    <div class="panel-body">
+        <div class="block-inner text-danger">
+            <div class="form-actions text-center">
+                <input name="Button" type="button" onclick="history.go(-1);" class="btn btn-success" value="<?= __("Kembali") ?>">
+                <input type="reset" value="Reset" class="btn btn-info">
+                <input type="submit" value="<?= __("Cetak Laporan Transaksi") ?>" class="btn btn-danger">
+            </div>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,5 @@
+msgid "locale0001"
+msgstr "Menampilkan {:start} sampai {:end} dari {:count} data. Halaman {:page} dari {:pages}."
+
+msgid "locale0002"
+msgstr "Department"

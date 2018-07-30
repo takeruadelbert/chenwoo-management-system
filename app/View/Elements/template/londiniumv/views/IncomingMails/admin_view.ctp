@@ -1,0 +1,1 @@
+<?= $this->element(_TEMPLATE_DIR."/{$template}/node/detailsurat");?>
